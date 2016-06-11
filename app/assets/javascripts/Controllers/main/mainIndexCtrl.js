@@ -4,4 +4,4 @@ angular.module('books', [])
   function($scope) {
     $scope.title = "Hello"
   }
-])
+]);
