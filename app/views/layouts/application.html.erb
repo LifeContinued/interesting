@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html ng-app="books">
+<html ng-app="bookApp">
   <head>
     <title>Books</title>
     <%= stylesheet_link_tag    "application", media: "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
-  </head>
   <body>
-    <div ng-controller="IndexCtrl">
-      <h1>{{ title }}</h1>
+    <div class="view-container">
+      <div ng-view class="view-frame"></div>
     </div>
   </body>
 </html>

@@ -1,0 +1,117 @@
+<div class="book-images">
+  <img ng-src="{{img}}" class="book"
+      ng-class="{selected: img === $ctrl.mainImageUrl}"
+      ng-repeat="img in $ctrl.book.images" />
+</div>
+
+<h1>{{$ctrl.book.name}}</h1>
+
+<p>{{$ctrl.book.description}}</p>
+
+<ul class="book-thumbs">
+  <li ng-repeat="img in $ctrl.book.images">
+    <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)" />
+  </li>
+</ul>
+
+<ul class="specs">
+  <li>
+    <span>Availability and Networks</span>
+    <dl>
+      <dt>Availability</dt>
+      <dd ng-repeat="availability in $ctrl.book.availability">{{availability}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Battery</span>
+    <dl>
+      <dt>Type</dt>
+      <dd>{{$ctrl.book.battery.type}}</dd>
+      <dt>Talk Time</dt>
+      <dd>{{$ctrl.book.battery.talkTime}}</dd>
+      <dt>Standby time (max)</dt>
+      <dd>{{$ctrl.book.battery.standbyTime}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Storage and Memory</span>
+    <dl>
+      <dt>RAM</dt>
+      <dd>{{$ctrl.book.storage.ram}}</dd>
+      <dt>Internal Storage</dt>
+      <dd>{{$ctrl.book.storage.flash}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Connectivity</span>
+    <dl>
+      <dt>Network Support</dt>
+      <dd>{{$ctrl.book.connectivity.cell}}</dd>
+      <dt>WiFi</dt>
+      <dd>{{$ctrl.book.connectivity.wifi}}</dd>
+      <dt>Bluetooth</dt>
+      <dd>{{$ctrl.book.connectivity.bluetooth}}</dd>
+      <dt>Infrared</dt>
+      <dd>{{$ctrl.book.connectivity.infrared | checkmark}}</dd>
+      <dt>GPS</dt>
+      <dd>{{$ctrl.book.connectivity.gps | checkmark}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Android</span>
+    <dl>
+      <dt>OS Version</dt>
+      <dd>{{$ctrl.book.android.os}}</dd>
+      <dt>UI</dt>
+      <dd>{{$ctrl.book.android.ui}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Size and Weight</span>
+    <dl>
+      <dt>Dimensions</dt>
+      <dd ng-repeat="dim in $ctrl.book.sizeAndWeight.dimensions">{{dim}}</dd>
+      <dt>Weight</dt>
+      <dd>{{$ctrl.book.sizeAndWeight.weight}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Display</span>
+    <dl>
+      <dt>Screen size</dt>
+      <dd>{{$ctrl.book.display.screenSize}}</dd>
+      <dt>Screen resolution</dt>
+      <dd>{{$ctrl.book.display.screenResolution}}</dd>
+      <dt>Touch screen</dt>
+      <dd>{{$ctrl.book.display.touchScreen | checkmark}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Hardware</span>
+    <dl>
+      <dt>CPU</dt>
+      <dd>{{$ctrl.book.hardware.cpu}}</dd>
+      <dt>USB</dt>
+      <dd>{{$ctrl.book.hardware.usb}}</dd>
+      <dt>Audio / headbook jack</dt>
+      <dd>{{$ctrl.book.hardware.audioJack}}</dd>
+      <dt>FM Radio</dt>
+      <dd>{{$ctrl.book.hardware.fmRadio | checkmark}}</dd>
+      <dt>Accelerometer</dt>
+      <dd>{{$ctrl.book.hardware.accelerometer | checkmark}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Camera</span>
+    <dl>
+      <dt>Primary</dt>
+      <dd>{{$ctrl.book.camera.primary}}</dd>
+      <dt>Features</dt>
+      <dd>{{$ctrl.book.camera.features.join(', ')}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Additional Features</span>
+    <dd>{{$ctrl.book.additionalFeatures}}</dd>
+  </li>
+</ul>
