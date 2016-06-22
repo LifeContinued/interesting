@@ -1,22 +1,14 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show]
 
-  # GET /users/1
-  # GET /users/1.json
-  def show
-  end
-
   # POST /users
   # POST /users.json
   def create
     @user = User.new(user_params)
-
-    respond_to do |format|
-      if @user.save
-        format.json { render :show, status: :created, location: @user }
-      else
-        format.json { render json: @user.errors, status: :unprocessable_entity }
-      end
+    if @user.save
+      render :show, status: :created, location: @user
+    else
+      render json: @user.errors, status: :unprocessable_entity
     end
   end
 
