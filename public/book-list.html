@@ -1,9 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-    </head>
-    <body>
-    	hello
-    </body>
-</html>
+<div class="container-fluid">
+	<div class="navbar">
+		<ul class="nav nav-tabs">
+		  <li role="presentation" class="active"><a href="#">最新上架</a></li>
+		  <li role="presentation" class="disabled"><a href="#">为你推荐</a></li>
+		  <li role="presentation" class="disabled"><a href="#">TOP20</a></li>
+		</ul>
+		<div class="btn-group">
+			<button type="button" class="btn btn-default">登录</button>
+			<button type="button" class="btn btn-danger">注册</button>
+		</div>
+	</div>
+	<div class="main-title">
+		<img src="Bitmap.png" alt="logo" height="75px" width="90px">
+		<img src="Bovers.png" alt="Bovers" width="60px">
+		<img src="title.png" alt="title" width="200px">
+	</div>
+	<div class="books-container">
+		<form class="search">
+			<div class="search-wrap">
+			<input type="text" ng-model="$ctrl.query" class="form-control" placeholder="搜索书名或作者">
+	  		<img src="Search.png" alt="search.png">
+			</div>
+		</form>
+	      <!--Body content-->
+
+	      <ul class="books">
+
+	        <li ng-repeat="book in $ctrl.books | filter:$ctrl.query" >
+	          <a href="#!/books/{{book.id}}" >
+	            <img ng-src="{{book.cover}}" alt="{{book.name}}" />
+	          </a>
+	          <div class="book-inf">
+	          	<a class="book-name" href="#!/books/{{book.id}}">{{book.name}}</a>
+	          <p class="book-author">{{book.author}}</p>
+	          </div>
+	        </li>
+
+	      </ul>
+	</div>
+
+
+</div>

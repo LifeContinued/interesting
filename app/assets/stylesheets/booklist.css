@@ -1,0 +1,69 @@
+/*
+* @Author: michellewkx
+* @Date:   2016-06-22 12:53:25
+* @Last Modified by:   michellewkx
+* @Last Modified time: 2016-06-22 14:36:59
+*/
+body {
+	background-color: #FAFAFA;
+	font-size: 16px;
+	padding-top: 30px;
+}
+.main-title img {
+	display: block;
+	margin: 30px auto;
+}
+div.nav {
+	color: #ccc;
+}
+div.nav .active{
+	font-size: bolder;
+	color: #000;
+}
+.search {
+	width:20%;
+	margin: 0 auto;
+}
+.search-wrap {
+	position: relative;
+}
+.search img {
+	height: 25px;
+	width: 23px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+div.btn-group {
+	position: absolute;
+	top:0px;
+	right: 5px;
+}
+div.btn-group button{
+	margin-right: 20px;
+}
+
+.books .ul{
+	width: 80%;
+	margin: 0 auto;
+}
+.books li {
+	display: inline-block;
+	width: 15%;
+	margin: 5% 5%;
+}
+.books img {
+	width: 90%;
+}
+.books .book-inf {
+	margin-left: 5px;
+	margin-top: 30px;
+}
+.books .book-name {
+	display: inline-block;
+	text-decoration: none;
+	color: #444;
+}
+.books .book-author{
+	color: #aaa;
+}
