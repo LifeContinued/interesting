@@ -1,0 +1,47 @@
+<div class="container-fluid">
+	<div class="navbar navbar-custom">
+		<ul class="nav nav-tabs">
+		  <li role="presentation" class="active"><a href="#">最新上架</a></li>
+		  <li role="presentation" class="disabled"><a href="#">为你推荐</a></li>
+		  <li role="presentation" class="disabled"><a href="#">TOP20</a></li>
+		</ul>
+		<img src="Bitmap.png" alt="logo" width="50px" height="40px">
+		<div class="btn-group">
+			<button type="button" class="btn btn-default">登录</button>
+			<button type="button" class="btn btn-danger">注册</button>
+		</div>
+	</div>
+	<div class="content block">
+		<img ng-src="{{$ctrl.bookDetail.cover}}" class="pic">
+		<div class="content-right">
+			<p class="book-name">{{$ctrl.bookDetail.name}}</p>
+			<p class="book-author">{{$ctrl.bookDetail.author}}</p>
+			<p class="book-type">设计 美术 插画</p>
+			<img src="Rate.png" alt="rate" class="rate">
+			<div class="operate">
+				<img src="ReadNow.png" alt="readnow" class="readnow">
+				<img src="Add.png" alt="add" class="add">
+			</div>
+
+		</div>
+
+	</div>
+	<div class="description block">
+		<p class="brief-detail">书籍简介</p>
+		<p class="book-detail">{{$ctrl.bookDetail.desc}}</p>
+		<p>
+			<img class="more" src="More.png"></img>
+		</p>
+	</div>
+	<div class="comment block">
+		<p class="comment-inf">书友简评</p>
+		<img src="1.png">
+		<img src="2.png">
+<!-- 		<img src="3.png">
+		<img src="4.png"> -->
+	</div>
+	<div class="relay block">
+		<p class="relay-books">相关书籍</p>
+		<img src="relay.png">
+	</div>
+</div>

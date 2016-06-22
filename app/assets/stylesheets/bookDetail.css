@@ -1,0 +1,119 @@
+/*
+* @Author: michellewkx
+* @Date:   2016-06-22 15:44:57
+* @Last Modified by:   michellewkx
+* @Last Modified time: 2016-06-22 19:12:43
+*/
+body {
+	background-color: #FAFAFA;
+	font-size: 16px;
+	padding-top: 30px;
+}
+
+.navbar-custom {
+	margin-bottom: 0px !important;
+}
+.main-title img {
+	display: block;
+	margin: 30px auto;
+}
+div.content {
+	width: 100%;
+	height: 400px;
+}
+.description {
+	width: 100%;
+	height: 230px;
+}
+div.nav {
+	color: #ccc;
+}
+div.nav .active {
+	font-size: bolder;
+	color: #000;
+}
+div.navbar img {
+	position: absolute;
+	top:0;
+	left: 48%;
+}
+div.content{
+	background-color:#FFFFE0;
+}
+.content {
+	position: relative;
+}
+.content .pic {
+	width: 300px;
+	position: absolute;
+	bottom: -50px;
+	left: 50px;
+}
+.content .content-right {
+	position: absolute;
+	left: 45%;
+	top: 20%;
+}
+.content .book-name {
+	font-size: 30px;
+	font-weight: bolder;
+}
+.content .book-author {
+	font-size: 20px;
+	color: #999;
+}
+.content .book-type {
+	font-size: 15px;
+	color: #aaa;
+}
+.content .rate {
+	width: 300px;
+	margin-top: 20px;
+}
+.content .operate {
+	display: block;
+	width: 100%;
+	margin-top: 40px;
+}
+.content .readnow {
+	width: 150px;
+}
+.content .add {
+	display: inline-block;
+	margin-left: 30px;
+	width: 40px;
+}
+.comment{
+	background-color: #FAFAFA;
+}
+.brief-detail, .comment-inf, .relay-books {
+	font-size: 20px;
+	font-weight: bold;
+	width:80px;
+	margin: 40px auto;
+}
+.book-detail {
+	font-size: 16px;
+	color: #999;
+	margin: 10px 150px;
+}
+.comment-inf{
+	position: relative;
+	top: 40px;
+}
+.more {
+	width:30px;
+	display: block;
+	margin: 30px auto;
+}
+.comment img {
+	width: 40%;
+	margin-left: 5%;
+	margin-top: 5%;
+}
+.relay-books {
+	margin-top: 50px;
+}
+.relay img{
+	width: 100%;
+}
