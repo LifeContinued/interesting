@@ -1,16 +1,13 @@
 /*
 * @Author: michellewkx
-* @Date:   2016-06-19 21:29:28
+* @Date:   2016-06-21 16:04:26
 * @Last Modified by:   michellewkx
-* @Last Modified time: 2016-06-19 22:48:51
+* @Last Modified time: 2016-06-21 17:36:39
 */
 
-'use strict';
-
-// Define the `bookApp` module
-angular.module('bookApp', [
-  'ngAnimate',
-  'ngRoute',
-  'bookDetail',
-  'bookList',
-]);
+// 'use strict';
+// angular.module('bookApp', [
+//   'ngRoute',
+//   'bookDetail',
+//   'bookList'
+// ]);
