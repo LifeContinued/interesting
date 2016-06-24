@@ -1,0 +1,31 @@
+/*
+* @Author: michellewkx
+* @Date:   2016-06-24 13:34:05
+* @Last Modified by:   michellewkx
+* @Last Modified time: 2016-06-24 13:34:13
+*/
+body {
+	background-color: #FAFAFA;
+	font-size: 16px;
+	padding-top: 30px;
+}
+.main-title img {
+	display: block;
+	margin: 30px auto;
+}
+.signup , .login {
+	text-decoration: none;
+}
+.signup {
+	color: #fff;
+}
+.login {
+	color: #444;
+}
+div.nav {
+	color: #ccc;
+}
+div.nav .active{
+	font-size: bolder;
+	color: #000;
+}
